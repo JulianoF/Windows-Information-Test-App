@@ -63,7 +63,6 @@
             this.label1.Size = new System.Drawing.Size(351, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Basic System Information Report";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pcNameCheckBox
             // 
@@ -75,7 +74,7 @@
             this.pcNameCheckBox.TabIndex = 2;
             this.pcNameCheckBox.Text = "PC Name";
             this.pcNameCheckBox.UseVisualStyleBackColor = true;
-            this.pcNameCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.pcNameCheckBox.CheckedChanged += new System.EventHandler(this.pcName_CheckedChanged);
             // 
             // osCheckBox
             // 
@@ -87,6 +86,7 @@
             this.osCheckBox.TabIndex = 3;
             this.osCheckBox.Text = "OS Version";
             this.osCheckBox.UseVisualStyleBackColor = true;
+            this.osCheckBox.CheckedChanged += new System.EventHandler(this.osCheckBox_CheckedChanged);
             // 
             // cpuTypeCheckBox
             // 
@@ -98,6 +98,7 @@
             this.cpuTypeCheckBox.TabIndex = 4;
             this.cpuTypeCheckBox.Text = "CPU Type";
             this.cpuTypeCheckBox.UseVisualStyleBackColor = true;
+            this.cpuTypeCheckBox.CheckedChanged += new System.EventHandler(this.cpuTypeCheckBox_CheckedChanged);
             // 
             // cpuSpeedCheckBox
             // 
@@ -109,7 +110,7 @@
             this.cpuSpeedCheckBox.TabIndex = 5;
             this.cpuSpeedCheckBox.Text = "CPU Speed";
             this.cpuSpeedCheckBox.UseVisualStyleBackColor = true;
-            this.cpuSpeedCheckBox.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            this.cpuSpeedCheckBox.CheckedChanged += new System.EventHandler(this.cpuSpeed_CheckedChanged);
             // 
             // label2
             // 
@@ -120,7 +121,6 @@
             this.label2.Size = new System.Drawing.Size(391, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Select The Information you want the Information Report to Display";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // ramCheckBox
             // 
@@ -132,6 +132,7 @@
             this.ramCheckBox.TabIndex = 7;
             this.ramCheckBox.Text = "Installed RAM";
             this.ramCheckBox.UseVisualStyleBackColor = true;
+            this.ramCheckBox.CheckedChanged += new System.EventHandler(this.ramCheckBox_CheckedChanged);
             // 
             // cDriveCheckBox
             // 
@@ -143,6 +144,7 @@
             this.cDriveCheckBox.TabIndex = 8;
             this.cDriveCheckBox.Text = "Size of C:\\ Drive";
             this.cDriveCheckBox.UseVisualStyleBackColor = true;
+            this.cDriveCheckBox.CheckedChanged += new System.EventHandler(this.cDriveCheckBox_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -166,7 +168,6 @@
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
-            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // MainWindow
             // 

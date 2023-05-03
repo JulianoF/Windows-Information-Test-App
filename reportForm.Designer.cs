@@ -30,6 +30,7 @@
         {
             this.exitButton = new System.Windows.Forms.Button();
             this.returnButton = new System.Windows.Forms.Button();
+            this.outputBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // exitButton
@@ -52,16 +53,29 @@
             this.returnButton.UseVisualStyleBackColor = true;
             this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
+            // outputBox
+            // 
+            this.outputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputBox.Location = new System.Drawing.Point(12, 12);
+            this.outputBox.Multiline = true;
+            this.outputBox.Name = "outputBox";
+            this.outputBox.ReadOnly = true;
+            this.outputBox.Size = new System.Drawing.Size(466, 366);
+            this.outputBox.TabIndex = 2;
+            // 
             // ResultsPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 450);
+            this.Controls.Add(this.outputBox);
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.exitButton);
             this.Name = "ResultsPage";
             this.Text = "Run Results";
+            this.Load += new System.EventHandler(this.ResultsPage_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,5 +83,6 @@
 
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button returnButton;
+        private System.Windows.Forms.TextBox outputBox;
     }
 }

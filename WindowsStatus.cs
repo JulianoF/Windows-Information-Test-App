@@ -5,15 +5,16 @@ namespace WindowsStatusTestAPP
 {
     public partial class MainWindow : Form
     {
+        systemInfo sysInf;
         public MainWindow()
         {
             InitializeComponent();
-
+            this.sysInf = new systemInfo();
         }
 
         private void runButtonClick(object sender, EventArgs e)
         {
-            ResultsPage frm = new ResultsPage(this);
+            ResultsPage frm = new ResultsPage(this,this.sysInf);
             frm.Show();
             this.Hide();
             frm.FormClosed += (s, args) => this.Close();
@@ -26,7 +27,14 @@ namespace WindowsStatusTestAPP
 
         private void pcName_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (pcNameCheckBox.Checked)
+            {
+                sysInf.setName(true);
+            }
+            else
+            {
+                sysInf.setName(false);
+            }
         }
 
         private void cpuSpeed_CheckedChanged(object sender, EventArgs e)

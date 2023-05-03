@@ -13,10 +13,12 @@ namespace WindowsStatusTestAPP
     public partial class ResultsPage : Form
     {
         public MainWindow main { get; set; }
-        public ResultsPage(MainWindow main)
+        public systemInfo sysInf;
+        public ResultsPage(MainWindow main, systemInfo sys)
         {
             InitializeComponent();
             this.main = main;
+            this.sysInf = sys;
         }
 
         private void exitButtonClickEvent(object sender, EventArgs e)
@@ -29,10 +31,10 @@ namespace WindowsStatusTestAPP
 
         private void returnButton_Click(object sender, EventArgs e)
         {
-          // WIP FUNCTION -> Will Return to main Form
-          // (this.main as MainWindow).Show();
-          // this.Close();
-             MessageBox.Show("WIP Functionality","WIP");
+            // WIP FUNCTION -> Will Return to main Form
+            // (this.main as MainWindow).Show();
+            // this.Close();
+            MessageBox.Show("WIP Functionality","WIP");
         }
     }
 }

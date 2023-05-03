@@ -52,6 +52,7 @@
     <Compile Include="reportForm.Designer.cs">
       <DependentUpon>reportForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="systemInfo.cs" />
     <Compile Include="WindowsStatus.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -39,12 +39,26 @@ namespace WindowsStatusTestAPP
 
         private void cpuSpeed_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cpuSpeedCheckBox.Checked)
+            {
+                sysInf.setSpeed(true);
+            }
+            else
+            {
+                sysInf.setSpeed(false);
+            }
         }
 
         private void osCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (osCheckBox.Checked)
+            {
+                sysInf.setVersion(true);
+            }
+            else
+            {
+                sysInf.setVersion(false);
+            }
         }
 
         private void cpuTypeCheckBox_CheckedChanged(object sender, EventArgs e)

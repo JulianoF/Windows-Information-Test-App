@@ -36,5 +36,10 @@ namespace WindowsStatusTestAPP
             // this.Close();
             MessageBox.Show("WIP Functionality","WIP");
         }
+
+        private void ResultsPage_Load(object sender, EventArgs e)
+        {       
+            outputBox.Text = sysInf.getSysInfo();
+        }
     }
 }

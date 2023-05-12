@@ -63,17 +63,38 @@ namespace WindowsStatusTestAPP
 
         private void cpuTypeCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cpuTypeCheckBox.Checked)
+            {
+                sysInf.setType(true);
+            }
+            else
+            {
+                sysInf.setType(false);
+            }
         }
 
         private void ramCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (ramCheckBox.Checked)
+            {
+                sysInf.setRam(true);
+            }
+            else
+            {
+                sysInf.setRam(false);
+            }
         }
 
         private void cDriveCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cDriveCheckBox.Checked)
+            {
+                sysInf.setDrive(true);
+            }
+            else
+            {
+                sysInf.setDrive(false);
+            }
         }
     }
 }

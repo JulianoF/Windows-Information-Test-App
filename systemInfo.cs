@@ -8,12 +8,12 @@ namespace WindowsStatusTestAPP
 {
     public class systemInfo
     {
-        bool showName;
-        bool showVersion;
-        bool showType;
-        bool showSpeed;
-        bool showRam;
-        bool showDrive;
+        private bool showName;
+        private bool showVersion;
+        private bool showType;
+        private bool showSpeed;
+        private bool showRam;
+        private bool showDrive;
         public systemInfo()
         {
             showName = false;
@@ -97,22 +97,22 @@ namespace WindowsStatusTestAPP
             StringBuilder output = new StringBuilder();
             if (showName)
             {
-                output.AppendLine("Desktop Name:   " + Environment.MachineName.ToString());
+                //output.AppendLine("Desktop Name:   " + Environment.MachineName.ToString());
             }
 
             if (showVersion)
             {
-                output.AppendLine("OS Version:   " + Environment.OSVersion.ToString());
+                //output.AppendLine("OS Version:   " + Environment.OSVersion.ToString());
             }
 
             if (showType)
             {
-                //output.AppendLine("CPU Type:   " + Environment.ToString());
+                
             }
 
             if (showSpeed)
             {
-                output.AppendLine("CPU Speed:   " + Environment.ProcessorCount.ToString());
+                
             }
 
             if (showRam)

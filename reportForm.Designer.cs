@@ -73,6 +73,7 @@
             this.Controls.Add(this.exitButton);
             this.Name = "ResultsPage";
             this.Text = "Run Results";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ResultsPage_FormClosing_1);
             this.Load += new System.EventHandler(this.ResultsPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

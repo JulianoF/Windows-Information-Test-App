@@ -17,7 +17,6 @@ namespace WindowsStatusTestAPP
             ResultsPage frm = new ResultsPage(this,this.sysInf);
             frm.Show();
             this.Hide();
-            frm.FormClosed += (s, args) => this.Close();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

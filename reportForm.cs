@@ -13,7 +13,7 @@ namespace WindowsStatusTestAPP
 {
     public partial class ResultsPage : Form
     {
-        public MainWindow main { get; set; }
+        public MainWindow main;
         public systemInfo sysInf;
         public ResultsPage(MainWindow main, systemInfo sys)
         {
@@ -53,6 +53,11 @@ namespace WindowsStatusTestAPP
                 MessageBox.Show("Closed by X or Alt+F4");
                 Application.Exit();
             }
+        }
+
+        private void outputBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
